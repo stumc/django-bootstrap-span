@@ -1,0 +1,14 @@
+ language: python
+
+ python:
+   - 2.7
+   - 3.4
+   - pypy
+
+ install:
+   - pip install pytest
+   - pip install django
+   - pip install django-bootstrap
+
+ script:
+   - py.test
