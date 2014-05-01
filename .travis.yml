@@ -1,19 +1,19 @@
 language: python
 
 python:
-	- 2.7
-	- 3.4
-	- pypy
+    - 2.7
+    - 3.4
+    - pypy
 
 # Commands for install
 install:
-	- pip install pytest
-	- pip install six
-	- pip install django
-	- pip install django-bootstrap
-	- pip install django_tables2
-	- pip install django-tinymce
+    - pip install pytest
+    - pip install six
+    - pip install django
+    - pip install django-bootstrap
+    - pip install django_tables2
+    - pip install django-tinymce
 
 # Commands for running
 script:
-	- py.test
+    - py.test
