@@ -8,7 +8,8 @@ How to get set up for development.
     Get pytest: pip install pytest
     Get coverage : pip install coverage
     Get pylint : pip install pylint
-    The github project: http://github.com/stumc/django-bootstrap-span.git
+    The github project: 
+       git clone https://github.com/stumc/django-bootstrap-span.git
 
 How to run the tests.
 =====================
@@ -38,6 +39,19 @@ Coding standards, test coverage standards, documentation...
     tox tests passing on 2.7 and 3.4
     pylint no failures
     code coverage 100% or more
+    
+ Git cheat sheet
+ ===============
+    git status
+    git log --oneline
+    git add myNewFile.py
+    git commit -m "Changed something"
+    git remote -v
+    git remote add origin https://github.com/stumc/django-bootstrap-span
+    git pull origin master
+    git tag -a v0.0.1 -m "the next release"
+    git push origin v0.0.1
+    git status
     
  Documentation
  =============

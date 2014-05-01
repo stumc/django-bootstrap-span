@@ -4,13 +4,13 @@ Welcome to django-bootstrap-span!
 Abstract
 --------
 
-  This library applies class="spanN" CSS modifiers to a django-bootstrap form's fields.
+This library applies class="spanN" CSS modifiers to a form's fields. 
+In conjunction with a bootstrap CSS, these "spanN"  class definitions control how wide a form field is rendered in the HTML.
+Expected use is with django-bootstrap application.
 
-  These spanN in bootstrap classes control how wide a form field is rendered in the view.
-
-  This library uses the maximum field widths gleaned from the underlying form or model
-  to know how to set the class span attribute. Thus you do not need to repeat your field max length settings - 
-  in line with Django's DRY principle - and each field is rendered across in the horizontal direction.
+This library uses the maximum field widths gleaned from the underlying form or model
+to know how to correctly calculate the size of the class span attribute. Thus you do not need to repeat the field max length settings - 
+in line with Django's DRY principle - as each field is HTML rendered correctly in the horizontal direction.
 
 Installing
 ----------
@@ -23,23 +23,40 @@ Requires django-bootstrap (includes Twitter bootstrap v2.0).
 Usage
 -----
 
-Install in your forms template .html file, as a form filter::
+Install the boostrap_span application in your settings file::
+
+    INSTALLED_APPS = (
+     ...
+        'bootstrap_toolkit',
+        'bootstrap_span',
+     ...
+     )
+
+Install ``apply_bootstrap_span`` form filter in each of your forms template *.html files::
 
     {% load bootstrap_span %}
     {{ form|apply_bootstrap_span:""| as_bootstrap }}
 
-    By default the filter apply_bootstrap_span applies to each field, up to 
-    12 (default) spans depending each fields discovered maximum field width 
-    using the default of 5 characters per span.
+By default the filter apply_bootstrap_span looks at each field in the form, and decides how many 
+spans (span1 to span12) to assign to it.
+
+Up to 12 spans (the default) can be assigned  - calculated depending each fields discovered maximum character width. 
+
+As a span is an arbitrary division of horizontal screen real estate - an adjustment is applied to go from the 
+maximum characters width of a fields to get to the number of spans.
+
+This is done using the parameter called characters per span -which has a default value of 5.
     
-    You can change 
-    - the maximum number of spans to allocate or 
-    - the characters per span 
-    in each form. If I wanted a maximum of 11 spans and 3 characters field width per span, I would use ::
+You can change 
+- the maximum number of spans to allocate (in case you are in a part of the HTML which is span-limited) or 
+- the characters per span 
+in each form. 
+
+If I wanted to render form's fields with a maximum of 11 spans and 3 characters width per span, I would use::
 
     {{ form|apply_bootstrap_span:"11,3"| as_bootstrap }}
 
-Full Form Template Example
+Fuller Example
 --------------------------
 
 Here is a fuller example using 11 spans and 6 characters per span::
@@ -54,3 +71,11 @@ Here is a fuller example using 11 spans and 6 characters per span::
         <input type="submit" class="btn" value="{% trans 'OK' %}" />
         
         </form>
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
