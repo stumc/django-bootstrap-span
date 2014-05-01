@@ -12,6 +12,7 @@ install:
     - pip install six
     - pip install django
     - pip install django-bootstrap
+    - pip install django-bootstrap-toolkit
     - pip install django_tables2
     - pip install django-tinymce
 
