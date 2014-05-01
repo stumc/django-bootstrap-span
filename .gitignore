@@ -1,0 +1,13 @@
+*.pyc
+.svn
+.svn*
+__pycache__/
+htmlcov/
+db.*
+.coverage
+.project
+.pydevproject
+.settings
+.tox/
+django_bootstrap_span.egg-info/
+

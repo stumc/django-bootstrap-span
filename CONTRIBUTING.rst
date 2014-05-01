@@ -26,11 +26,11 @@ What to include in a bug report.
 ================================
 
     1. Version of django-bootstrap-span
-    1b) Version of django-bootstrap
-    1c) Version of django
-    2. Version of python
-    3. Symptoms of problem (stack trace, output of html)
-    4. Sample code re-creating the problem (1 file)
+    2) Version of django-bootstrap
+    3) Version of django
+    4) Version of python
+    5) Symptoms of problem (stack trace, output of html)
+    6) Sample code re-creating the problem (1 file)
 
 Coding standards, test coverage standards, documentation...
 ===========================================================
