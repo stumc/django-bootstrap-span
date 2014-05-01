@@ -7,6 +7,7 @@ python:
 
 # Commands for install
 install:
+    - "pip install ."
     - pip install pytest
     - pip install six
     - pip install django
