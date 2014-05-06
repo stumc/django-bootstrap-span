@@ -49,18 +49,28 @@ Coding standards, test coverage standards, documentation...
     
  Git commands reminder sheet
  ===========================
+    # Get a new repo
     git status
     git clone https://github.com/stumc/django-bootstrap-span.git
     # make your changes
     git log --oneline
     git add myNewFile.py
     git commit -m "Changed something"
+    # set up remote repos (if created locally)
     git remote -v
     git remote add origin https://github.com/stumc/django-bootstrap-span
-    git pull origin master
+    # tag a new version
     git tag -a v0.0.1 -m "the next release"
-    git push origin v0.0.1
+    # merge tag to master on remote
+    git checkout master
+    git pull origin master
+    git merge v0.0.1       #to bring changes to local master from your develop branch
+    git push origin master #push current HEAD to remote master branch
     git status
+    # delete an unwanted tag
+    git tag
+    git tag -d unwanted_tag
+    git push origin :refs/tags/unwanted_tag
     
  Git, Documentation And Continuous Integration Links
  ===================================================
