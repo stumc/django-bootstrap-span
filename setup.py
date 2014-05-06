@@ -8,11 +8,11 @@ with open('README.rst') as fh:
 setup(
       name='django-bootstrap-span',
       version='0.0.1',
-      description='Django bootstrap v2 - CSS class spanN support for forms',
+      description='Django bootstrap span adds class=spanN support in forms input elements',
       long_description=long_description,
       author='Stuart McMillan',
       author_email='smcmillan@usefulautomation.com',
-      url='https://github.com/stumc/django/',
+      url='https://github.com/stumc/django-bootstrap-span',
       packages=['bootstrap_span','bootstrap_span.templatetags'],
       install_requires=['six','django','django-bootstrap'],
       classifiers=[
@@ -24,7 +24,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        #'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         "Topic :: Software Development :: Libraries",
         "Topic :: Utilities",
