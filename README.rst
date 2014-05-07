@@ -12,7 +12,7 @@ Adding these class span directives manually in the forms seems like a duplicatio
 
 The **django-bootstrap-span** library solves this problem by applying class="spanN" CSS modifiers on a form's fields - setting the effective width (in spans) of the horizontal form input elements.
 
-In conjunction with a Bootstrap V2 CSS, these "spanN" class definitions control how wide a form field elements is rendered in the HTML. The expected use of this is with django-bootstrap and your Django application.
+In conjunction with a Bootstrap V2 CSS, these "spanN" class definitions control how wide a form field elements are rendered in the HTML. The expected use of this is with django-bootstrap and your Django application.
 
 NOTE This is not meant for use in Bootstrap V3, which no longer uses spanN classes.
 

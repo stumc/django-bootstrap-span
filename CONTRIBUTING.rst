@@ -47,6 +47,13 @@ Coding standards, test coverage standards, documentation...
     code coverage 100% - required
     Travis CI - fully passing - required
     
+    
+Places to update version number increments:
+===========================================
+    setup.py (version)
+    CHANGES.rst (add change log)
+    docs/conf.py (release and version)
+    
  Git commands reminder sheet
  ===========================
     # Get a new repo
@@ -60,11 +67,11 @@ Coding standards, test coverage standards, documentation...
     git remote -v
     git remote add origin https://github.com/stumc/django-bootstrap-span
     # tag a new version
-    git tag -a v0.0.1 -m "the next release"
+    git tag -a 0.0.2 -m "the next release"
     # merge tag to master on remote
     git checkout master
     git pull origin master
-    git merge v0.0.1       #to bring changes to local master from your develop branch
+    git merge 0.0.2       #to bring changes to local master from your develop branch
     git push origin master #push current HEAD to remote master branch
     git status
     # delete an unwanted tag

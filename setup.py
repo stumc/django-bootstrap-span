@@ -1,7 +1,7 @@
 "Setup file for django-bootstrap-span"
 
 from setuptools import setup
-version='0.0.1'
+version='0.0.2'
 with open('README.rst') as fh:
     long_description = fh.read()
 
@@ -16,10 +16,11 @@ setup(
       packages=['bootstrap_span','bootstrap_span.templatetags'],
       install_requires=['six','django','django-bootstrap'],
       keywords = ['django', 'bootstrap', 'class', 'span', 'form', 'input', 'width' ],
-      download_url = 'https://github.com/stumc/django-bootstrap-span/tarball/v'+version,
+      download_url = 'https://github.com/stumc/django-bootstrap-span/tarball/'+version,
       classifiers=[
 #        "Development Status :: 5 - Production/Stable",
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
+#        'Development Status :: 3 - Alpha',
         "Operating System :: OS Independent",
         "Intended Audience :: Developers",
         'License :: OSI Approved :: BSD License',
