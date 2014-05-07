@@ -54,11 +54,12 @@ Places to update version number increments:
     CHANGES.rst (add change log)
     docs/conf.py (release and version)
     
- Git commands reminder sheet
- ===========================
+Git commands reminder sheet
+===========================
     # Get a new repo
     git status
     git clone https://github.com/stumc/django-bootstrap-span.git
+    
     # make your changes
     git log --oneline
     git add myNewFile.py
@@ -66,21 +67,33 @@ Places to update version number increments:
     # set up remote repos (if created locally)
     git remote -v
     git remote add origin https://github.com/stumc/django-bootstrap-span
+    
     # tag a new version
     git tag -a 0.0.2 -m "the next release"
+    
     # merge tag to master on remote
     git checkout master
     git pull origin master
     git merge 0.0.2       #to bring changes to local master from your develop branch
     git push origin master #push current HEAD to remote master branch
     git status
+    
     # delete an unwanted tag
     git tag
     git tag -d unwanted_tag
     git push origin :refs/tags/unwanted_tag
     
- Git, Documentation And Continuous Integration Links
- ===================================================
+PyPI Release
+============
+    # Push to git hub tag and master first (only authorised PyPI users can do this)...
+    python setup.py register -r pypitest
+    python setup.py sdist upload -r pypitest
+    python setup.py register -r pypi
+    python setup.py sdist upload -r pypi
+    
+    
+Git, Documentation And Continuous Integration Links
+===================================================
     https://github.com/stumc/django-bootstrap-span
     https://readthedocs.org/projects/django-bootstrap-span/
     https://travis-ci.org/stumc/django-bootstrap-span

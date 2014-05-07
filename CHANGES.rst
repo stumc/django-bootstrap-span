@@ -14,4 +14,8 @@ master (unreleased)
 -------------------
 
 * Fixing documentation and pypi bug.
-  
+
+0.0.3 (2014.05.07)
+-------------------
+
+* Added PyPI docs, coverage badge and travis-ci badge.  

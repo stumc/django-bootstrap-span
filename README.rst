@@ -1,6 +1,11 @@
 Welcome to django-bootstrap-span!
 =================================
 
+.. image:: https://travis-ci.org/stumc/django-bootstrap-span.svg?branch=master
+    :target: https://travis-ci.org/stumc/django-bootstrap-span
+.. image:: https://coveralls.io/repos/stumc/django-bootstrap-span/badge.png
+    :target: https://coveralls.io/r/stumc/django-bootstrap-span
+
 Abstract
 --------
 

@@ -16,7 +16,11 @@ install:
     - pip install django-bootstrap-toolkit
     - pip install django_tables2
     - pip install django-tinymce
-
+    - pip install coverage
+    - pip install coveralls
 # Commands for running
 script:
-    - py.test
+    - coverage run --source=bootstrap_span py.test
+# Reporting on coverage
+after_success:
+  coveralls
