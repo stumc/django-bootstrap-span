@@ -97,3 +97,5 @@ Git, Documentation And Continuous Integration Links
     https://github.com/stumc/django-bootstrap-span
     https://readthedocs.org/projects/django-bootstrap-span/
     https://travis-ci.org/stumc/django-bootstrap-span
+    https://coveralls.io/r/stumc/django-bootstrap-span
+

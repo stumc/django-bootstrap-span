@@ -23,4 +23,4 @@ script:
     - py.test --cov bootstrap_span tests/
 # Reporting on coverage
 after_success:
-    coveralls
+    coveralls debug
