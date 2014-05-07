@@ -1,4 +1,4 @@
-﻿Welcome to django-bootstrap-span!
+Welcome to django-bootstrap-span!
 =================================
 
 Abstract
@@ -62,6 +62,7 @@ This scaling is done using a scaling parameter called ''characters per span'' -w
 You can change 
   - the maximum number of spans to allocate (in case you are placing a form in a part of the HTML which is span-limited) or 
   - the characters per span in each form (in case your want to alter the relative character density of the fields for your page)
+
 in each form. 
 
 For instance, if I wanted to render form's fields with a maximum of 11 spans and 3 characters width per span, I would use::
@@ -92,9 +93,3 @@ Here is a fuller example using 11 spans and 6 characters per span, all enclosed 
         </form>
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
