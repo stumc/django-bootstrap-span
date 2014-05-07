@@ -20,7 +20,8 @@ install:
     - pip install coveralls
 # Commands for running
 script:
-    - py.test --cov bootstrap_span tests/
+    - coverage run --source bootstrap_span -m py.test
 # Reporting on coverage
 after_success:
-    coveralls debug
+    - coveralls
+
