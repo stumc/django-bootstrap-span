@@ -88,9 +88,13 @@ PyPI Release
     # Push to git hub tag and master first (only authorised PyPI users can do this)...
     python setup.py register -r pypitest
     python setup.py sdist upload -r pypitest
+    
+    https://testpypi.python.org/pypi?name=django-bootstrap-span&version=0.0.3&:action=display
+    
     python setup.py register -r pypi
     python setup.py sdist upload -r pypi
     
+    https://pypi.python.org/pypi?name=django-bootstrap-span&version=0.0.3&:action=display
     
 Git, Documentation And Continuous Integration Links
 ===================================================
@@ -98,4 +102,5 @@ Git, Documentation And Continuous Integration Links
     https://readthedocs.org/projects/django-bootstrap-span/
     https://travis-ci.org/stumc/django-bootstrap-span
     https://coveralls.io/r/stumc/django-bootstrap-span
+    
 
